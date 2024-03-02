@@ -1,0 +1,48 @@
+{
+  "author": "mingshuisheng",
+  "name": "@mingshuisheng/solid-katex",
+  "type": "module",
+  "version": "0.0.1",
+  "main": "dist/libs.js",
+  "types": "dist/libs.d.ts",
+  "repository": "https://github.com/mingshuisheng/solid-katex",
+  "homepage": "https://github.com/mingshuisheng/solid-katex",
+  "exports": {
+    ".": {
+      "types": "./dist/libs.d.ts",
+      "import": "./dist/libs.js"
+    },
+    "./ssr": {
+      "types": "./distssr/libs.d.ts",
+      "import": "./distssr/libs.js"
+    },
+    "./ssr/style": "./distssr/style.css",
+    "./style": "./dist/style.css"
+  },
+  "files": [
+    "dist",
+    "distssr"
+  ],
+  "description": "a solidjs katex component library",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "build:ssr": "tsc && vite build --config vite.config.ssr.ts",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "katex": "^0.16.9"
+  },
+  "license": "Apache License",
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^11.1.6",
+    "solid-js": "^1.8.15",
+    "tslib": "^2.6.2",
+    "typescript": "^5.2.2",
+    "vite": "^5.1.4",
+    "vite-plugin-solid": "^2.10.1"
+  },
+  "peerDependencies": {
+    "solid-js": "^1.8.15"
+  }
+}
