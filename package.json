@@ -19,6 +19,16 @@
     "./ssr/style": "./distssr/style.css",
     "./style": "./dist/style.css"
   },
+  "typesVersions": {
+    "*": {
+      ".": [
+        "./dist/libs.d.ts"
+      ],
+      "ssr": [
+        "./distssr/libs.d.ts"
+      ]
+    }
+  },
   "files": [
     "dist",
     "distssr"
